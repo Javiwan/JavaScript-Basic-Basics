@@ -1,0 +1,33 @@
+let destinations = ['Prague', 'London', 'Sydney', 'Belfast', 'Rome',
+  'Aruba', 'Paris', 'Bora Bora', 'Barcelona', 'Rio de Janeiro',
+  'Marrakesh', 'New York City'];
+
+  function contains(string){
+    destinations.forEach( function (place){
+      console.log(string);
+      console.log(place);
+      if(place === string){
+        console.log('yey');
+        return true;
+      }
+    })
+    return false;
+  }
+  
+
+
+/*
+  function contains(string){
+    for ( let i = 0; i < destinations.length; i += 1){
+      if(destinations[i] === string){
+        return true;
+      }
+    }
+    return false;
+  }
+*/
+
+
+
+  console.log(contains('Barcelona'));
+  console.log(contains('Tenerife'));

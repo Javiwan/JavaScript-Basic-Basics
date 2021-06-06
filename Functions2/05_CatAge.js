@@ -1,0 +1,39 @@
+/*function catAge(humanAge){
+  switch (humanAge){
+    case 0:
+      return 0;
+    
+    case 1: 
+      return 15;
+
+    case 2:
+      return 24;
+    
+    default:
+      return 24 + (humanAge - 2)*4;
+  }
+}
+*/
+//Recursive solution
+
+function catAge(humanAge){
+  switch(humanAge){
+    case 0:
+      return 0;
+
+    case 1: 
+      return 15;
+
+    case 2:
+      return 24;
+
+    default:
+      return 4 + catAge( humanAge - 1);
+  }
+}
+
+console.log(catAge(0)); 
+console.log(catAge(1)); 
+console.log(catAge(2)); 
+console.log(catAge(3)); 
+console.log(catAge(4)); 
